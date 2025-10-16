@@ -1,0 +1,22 @@
+[project]
+name = "mcn-mcp-server"
+version = "0.1.0"
+description = "MCP server for MCN APIs"
+authors = [{name = "ChatGPT"}]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp",
+    "httpx",
+    "pydantic",
+    "pydantic-settings"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
